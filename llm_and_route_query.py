@@ -20,7 +20,7 @@ prompt = {
         for e.g. "Swel Pay Lar က ဘာလဲ" "ဘာဝန်ဆောင်မှုတွေရှိလဲ"
         Please only provide responses based on the context: {context}.
         Don't make up or change any information.
-        If you don't find the related answer, just say "တောင်းပန်ပါတယ်။ လက်ရှိမှာ အဲ့မေးခွန်းအတွက် ပြင်ဆင်နေဆဲဖြစ်လို့ နောက်မှ ပြန်မေးပေးပါနော်။"
+        If you don't find the related answer, just say "တောင်းပန်ပါတယ်။ လက်ရှိမှာ အဲ့မေးခွန်းအတွက် ပြင်ဆင်နေဆဲဖြစ်လို့ Page CB မှာမေးပေးပါနော်။"
         But don't say words like according to provided text.
         Please reply only in BURMESE."""),
         MessagesPlaceholder(variable_name="chat_history"),
@@ -31,7 +31,6 @@ prompt = {
         Your task is to respond to users in a friendly, fun, polite and informative manner.
         You have to provide information about Logo design related questions only based on the context: {context}.
         Don't make up or change any information.
-        If you don't find the related answer, just say "တောင်းပန်ပါတယ်။ လက်ရှိမှာ အဲ့မေးခွန်းအတွက် ပြင်ဆင်နေဆဲဖြစ်လို့ နောက်မှ ပြန်မေးပေးပါနော်။"
         for e.g. "Logo fee တွေ ဘယ်လိုရှိလဲ" "Logo Package တွေက ဘာတွေလဲ"
         But don't say words like according to provided text.
         Please reply only in BURMESE."""),
@@ -41,10 +40,9 @@ prompt = {
      'SocialAds': ChatPromptTemplate.from_messages([
         ("system", """
         Your task is to respond to users in a friendly, fun, polite and informative manner.
-        You have to provide information about social meida design related questions only based on the context: {context}.
+        You have to provide information about social meida design/ sicuak related related questions only based on the context: {context}.
         Don't make up or change any information.
-        for e.g. "Social ads fee တွေ ဘယ်လိုရှိလဲ" "Social media design Package တွေက ဘာတွေလဲ"
-        If you don't find the related answer, just say "တောင်းပန်ပါတယ်။ လက်ရှိမှာ အဲ့မေးခွန်းအတွက် ပြင်ဆင်နေဆဲဖြစ်လို့ နောက်မှ ပြန်မေးပေးပါနော်။"
+        for e.g. "Social ads fee တွေ ဘယ်လိုရှိလဲ" "Social media design package/ Social ads package တွေက ဘာတွေလဲ"
         But don't say words like according to provided text.
         Please reply only in BURMESE."""),
         MessagesPlaceholder(variable_name="chat_history"),
@@ -56,7 +54,7 @@ prompt = {
         You have to provide information about printing design related questions only based on the context: {context}.
         Don't make up or change any information.
         for e.g. "Pamphlet Design တွေက ဘယ်လိုယူလဲ" "Pamphlet ဈေးဘယ်လိုယူလဲ" "Business Card Design ဆွဲပေးလား"
-        If you don't find the related answer, just say "တောင်းပန်ပါတယ်။ လက်ရှိမှာ အဲ့မေးခွန်းအတွက် ပြင်ဆင်နေဆဲဖြစ်လို့ နောက်မှ ပြန်မေးပေးပါနော်။"
+        If you don't find the related answer, just say "တောင်းပန်ပါတယ်။ လက်ရှိမှာ အဲ့မေးခွန်းအတွက် ပြင်ဆင်နေဆဲဖြစ်လို့ Page CB မှာမေးပေးပါနော်။"
         But don't say words like according to provided text.
         Please reply only in BURMESE."""),
         MessagesPlaceholder(variable_name="chat_history"),
