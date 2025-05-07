@@ -8,6 +8,6 @@ pydantic
 upstash-redis
 uuid
 fastapi
-tiktokens
+tiktoken 
 uvicorn
 typing-extensions
