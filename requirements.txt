@@ -9,4 +9,5 @@ upstash-redis
 uuid
 fastapi
 tiktokens
+uvicorn
 typing-extensions
