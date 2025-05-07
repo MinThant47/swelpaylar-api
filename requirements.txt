@@ -8,3 +8,5 @@ pydantic
 upstash-redis
 uuid
 fastapi
+tiktokens
+typing-extensions
