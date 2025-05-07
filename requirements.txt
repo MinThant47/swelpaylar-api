@@ -8,10 +8,6 @@ faiss-cpu
 tiktoken 
 pydantic
 typing-extensions
-streamlit
-python-dotenv
 upstash-redis
-streamlit_extras
-streamlit_cookies_controller
 uuid
 fastapi
