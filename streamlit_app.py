@@ -1,7 +1,7 @@
 import streamlit as st
 from streamlit_extras.bottom_container import bottom
 from langchain.schema import HumanMessage, AIMessage
-from schema import app
+from schema import chatbot
 import os
 from streamlit_cookies_controller import CookieController
 import uuid
@@ -334,7 +334,7 @@ if final_text:
     st.markdown(f'<div class="chat-container"> <div class="message user-message">{final_text}</div>', unsafe_allow_html=True)
 
     with st.spinner("Processing..."):
-        result = app.invoke({'question': final_text, 'chat_history': st.session_state.chat_history})
+        result = chatbot.invoke({'question': final_text, 'chat_history': st.session_state.chat_history})
     if result:
       bot_message = result['response']['answer']
       # Convert markdown bullet points to HTML list

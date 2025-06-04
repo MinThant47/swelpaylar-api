@@ -10,7 +10,7 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://swelpaylar.vercel.app"], 
+    allow_origins=["https://swelpaylar.vercel.app", "http://localhost:3000"], 
     allow_credentials=True,
     allow_methods=["*"],  # Allow all methods (GET, POST, etc.)
     allow_headers=["*"],  # Allow all headers
@@ -59,3 +59,4 @@ def generate_chat(request: ChatRequest):
         "response_text": result['response']['answer']
     }
 
+#uvicorn main:app --host 0.0.0.0 --port 8000 --reload

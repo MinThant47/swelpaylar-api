@@ -4,11 +4,14 @@ from pydantic import BaseModel, Field
 from typing import Literal
 from langchain_google_genai import ChatGoogleGenerativeAI
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 
 try:
-    os.environ["GOOGLE_API_KEY"]= "AIzaSyC87rM9xeEqJ6Rt5LhguLed6QK5mzT6XBM"
+    os.environ["GOOGLE_API_KEY"]= os.getenv("GAPI")
 except:
-    os.environ["GOOGLE_API_KEY"]= "AIzaSyBWn4Tay_jDvdtatWziBVxZ90DdoXGx5h8"
+    os.environ["GOOGLE_API_KEY"]= os.getenv("GAPI2")
 
 
 llm = ChatGoogleGenerativeAI(
