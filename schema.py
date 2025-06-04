@@ -21,4 +21,4 @@ workflow.add_edge("Printing", END)
 workflow.add_edge("Recommender", END)
 workflow.add_edge("not_found", END)
 
-app = workflow.compile()
+chatbot = workflow.compile()

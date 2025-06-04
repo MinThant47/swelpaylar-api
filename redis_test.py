@@ -8,7 +8,7 @@ from langchain.schema import HumanMessage, AIMessage
 # CHAT_KEY = "swel_pay_lar_chat_history"
 
 def get_chat_key(user_id):
-    return f"chat_history:{user_id}"
+    return f"{user_id}"
 
 def save_chat_to_redis(chat_history, user_id):
     key = get_chat_key(user_id)
