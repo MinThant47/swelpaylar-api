@@ -16,3 +16,4 @@ streamlit_cookies_controller
 uuid
 fastapi
 requests
+uvicorn
